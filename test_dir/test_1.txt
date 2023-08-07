@@ -6,3 +6,5 @@ Many topological vector spaces are spaces of functions, or linear operators acti
 In this article, the scalar field of a topological vector space will be assumed to be either the complex numbers C  or the real numbers ,R unless clearly stated otherwise.
 209 | 961.6533026050573
 -609 | -244.10657600219722
+-751 | -107.46196065905181
+903 | 356.2248713383011
