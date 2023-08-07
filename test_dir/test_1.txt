@@ -3,3 +3,6 @@ A topological vector space is a vector space that is also a topological space wi
 Banach spaces, Hilbert spaces and Sobolev spaces are other well-known examples of TVSs.
 Many topological vector spaces are spaces of functions, or linear operators acting on topological vector spaces, and the topology is often defined so as to capture a particular notion of convergence of sequences of functions.
 In this article, the scalar field of a topological vector space will be assumed to be either the complex numbers C  or the real numbers ,R unless clearly stated otherwise.
+-831 | 616.3201023278934
+-519 | -92.5261543754104
+295 | 132.61186136445704
