@@ -6,7 +6,16 @@
 from random import randint, random
 
 def fill_file(file_name: str, line: int = 0) -> None:
-    with open(file_name, 'a', encoding="utf-8") as f:
+    """Simple function to fill a fill a text file with two numbers separated by a line,
+    the first number is integer,
+    the second number is float point number
+    all numbers are within [-1000, 1000]
+
+    Args:
+        file_name (str): file name
+        line (int, optional): Line from where the changes happen. Defaults to 0.
+    """
+    with open(file_name, 'r+', encoding="utf-8") as f:
         if line == 0:
             f.seek(line, 2)
         else:
