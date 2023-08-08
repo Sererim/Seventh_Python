@@ -9,7 +9,7 @@
 from seminar_fourth import make_file
 
 def make_extensions_files(extensions: list[str]=["txt", "md", "bat"], 
-                        extension_amount: list[str]=["2", "4", "2"]) -> None:
+                        extension_amount: list[str]=["2", "4", "2"], path: str = "test_dir/") -> None:
     
     if len(extensions) != len(extension_amount):
         print("Error!\nNumber of extensions and their amount must be the same.")
@@ -20,7 +20,7 @@ def make_extensions_files(extensions: list[str]=["txt", "md", "bat"],
         print("Error!\nAmount of files of certain extension must be a number.")
     
     for i in range(len(extensions)):
-        make_file(extension=extensions[i], amount=extension_amount[i])
+        make_file(extension=extensions[i], amount=extension_amount[i], path)
 
 
 if __name__ == "__main__":
