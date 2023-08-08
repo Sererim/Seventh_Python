@@ -8,8 +8,8 @@ from seminar_fourth import make_file
 from os import mkdir
 from shutil import SameFileError
 
-def make_files_in_directory(extensions: list[str]=["txt", "md", "bat"], 
-                        extension_amount: list[str]=["2", "4", "2"], path: str = "test_dir/") -> None:
+def make_files_in_directory(extensions: list[str]=["txt", "md", "bat", "mp4", "webm", "mp3", "png"], 
+                        extension_amount: list[str]=["2", "4", "2", "2", "4", "3", "2"], path: str = "test_dir/") -> None:
     
     if len(extensions) != len(extension_amount):
         print("Error!\nNumber of extensions and their amount must be the same.")

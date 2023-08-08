@@ -1,9 +1,11 @@
-from homework import fill_file
-from homework import random_names
-from homework import read_from_files
-from homework import make_file
-from homework import make_extensions_files
-from homework import make_files_in_directory
+from homework.seminar_first import fill_file
+from homework.seminar_second import random_names
+from homework.seminar_third import read_from_files
+from homework.seminar_fourth import make_file
+from homework.seminar_fith import make_extensions_files
+from homework.seminar_sixth import make_files_in_directory
+from homework.seminar_seventh import sort_files_by_extensions
+from homework.home_task import mass_rename
 
 # 1.1
 # - Напишите функцию, которая заполняет файл (добавляет в конец) случайными парами чисел. 
@@ -65,3 +67,14 @@ make_files_in_directory()
 # - Создайте функцию для сортировки файлов по директориям: видео, изображения, текст и т.п. 
 # - Каждая группа включает файлы с несколькими расширениями. 
 # - В исходной папке должны остаться только те файлы, которые не подошли для сортировки. 
+
+sort_files_by_extensions()
+
+# 2. Напишите функцию группового переименования файлов. Она должна:
+# - принимать параметр желаемое конечное имя файлов. При переименовании в конце имени добавляется порядковый номер.
+# - принимать параметр количество цифр в порядковом номере.
+# - принимать параметр расширение исходного файла. Переименование должно работать только для этих файлов внутри каталога.
+# - принимать параметр расширение конечного файла.
+# - принимать диапазон сохраняемого оригинального имени. Например для диапазона [3, 6] берутся буквы с 3 по 6 из исходного имени файла. 
+# - К ним прибавляется желаемое конечное имя, если оно передано. Далее счётчик файлов и расширение. 
+
