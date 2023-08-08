@@ -26,7 +26,7 @@ def make_files_in_directory(extensions: list[str]=["txt", "md", "bat"],
             mkdir(path=path)
             make_file(extension=extensions[i], amount=extension_amount[i], path=path)
         except SameFileError:
-            make_file(extension=extensions[i], amount=extension_amount[i], path=path)
+            make_file
 
 
 if __name__ == "__main__":
