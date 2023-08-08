@@ -3,6 +3,7 @@ from homework import random_names
 from homework import read_from_files
 from homework import make_file
 from homework import make_extensions_files
+from homework import make_files_in_directory
 
 # 1.1
 # - Напишите функцию, которая заполняет файл (добавляет в конец) случайными парами чисел. 
@@ -51,4 +52,13 @@ make_file()
 # - Внутри используйте вызов функции из прошлой задачи.
 
 make_extensions_files()
+
+# 1.6
+# - Дорабатываем функции из предыдущих задач. 
+# - Генерируйте файлы в указанную директорию — отдельный параметр функции. 
+# - Отсутствие/наличие директории не должно вызывать ошибок в работе функции (добавьте проверки). 
+# - Существующие файлы не должны удаляться/изменяться в случае совпадения имён.
+
+make_files_in_directory()
+
 
