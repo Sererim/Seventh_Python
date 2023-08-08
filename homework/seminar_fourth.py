@@ -51,9 +51,8 @@ def get_random_bytes(min_bytes: int, max_bytes: int) -> bytes:
     return randbytes(randint(min_bytes, max_bytes))
 
 
-def make_file(extension: str = "txt", min_lenght = 6, max_lenght = 30,
-              min_bytes: int = 256, max_bytes: int = 4096, amount = 42) -> None:
-    path = "test_dir/"
+def make_file(extension: str = "txt", min_lenght: int = 6, max_lenght: int = 30,
+              min_bytes: int = 256, max_bytes: int = 4096, amount: int = 42, path: str = "test_dir/") -> None:
     file_name = f"{get_random_name(min_lenght, max_lenght)}"
     content = get_random_bytes(min_bytes, max_bytes).decode(errors='ignore')
     
