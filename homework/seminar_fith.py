@@ -20,7 +20,7 @@ def make_extensions_files(extensions: list[str]=["txt", "md", "bat"],
         print("Error!\nAmount of files of certain extension must be a number.")
     
     for i in range(len(extensions)):
-        make_file(extension=extensions[i], amount=extension_amount[i], path)
+        make_file(extension=extensions[i], amount=extension_amount[i], path=path)
 
 
 if __name__ == "__main__":
