@@ -12,7 +12,7 @@
 from random import shuffle
 from random import randint
 from random import randbytes
-from shutil import copy
+from shutil import copyfile
 
 
 def get_random_name(min_lenght: int, max_lenght: int) -> str:    
@@ -55,12 +55,13 @@ def make_file(extension: str = "txt", min_lenght = 6, max_lenght = 30,
               min_bytes: int = 256, max_bytes: int = 4096, amount = 42) -> None:
     path = "test_dir/"
     file_name = f"{get_random_name(min_lenght, max_lenght)}"
-    content = get_random_bytes(min_bytes, max_bytes)
+    content = get_random_bytes(min_bytes, max_bytes).decode(errors='ignore')
     
-    
+    with open(f"{path}{file_name}.{extension}", '+w', encoding='utf-8') as f:
+        f.write(content)
     
     for i in range(amount):
-        copy(f"{path}{file_name}", f"{path}/{file_name}{i}.{extension}")
+        copyfile(f"{path}{file_name}.{extension}", f"{path}/{file_name}{i}.{extension}")
     
 
 if __name__ == "__main__":
