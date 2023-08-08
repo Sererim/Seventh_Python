@@ -6,7 +6,7 @@
 # - Количество файлов для каждого расширения различно. 
 # - Внутри используйте вызов функции из прошлой задачи.
 
-from seminar_fourth import make_file
+from homework import make_file
 
 def make_extensions_files(extensions: list[str]=["txt", "md", "bat"], 
                         extension_amount: list[str]=["2", "4", "2"], path: str = "test_dir/") -> None:

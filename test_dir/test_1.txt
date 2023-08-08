@@ -9,3 +9,5 @@ In this article, the scalar field of a topological vector space will be assumed 
 903 | 356.2248713383011
 484 | -974.2154420364494
 -472 | -319.1485668093794
+503 | -500.27340926298655
+408 | 881.8529041388871

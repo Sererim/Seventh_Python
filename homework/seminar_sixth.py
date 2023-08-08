@@ -4,7 +4,7 @@
 # - Отсутствие/наличие директории не должно вызывать ошибок в работе функции (добавьте проверки). 
 # - Существующие файлы не должны удаляться/изменяться в случае совпадения имён
 
-from seminar_fourth import make_file
+from homework import make_file
 from os import mkdir
 from shutil import SameFileError
 
