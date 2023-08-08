@@ -1,11 +1,11 @@
-from homework.seminar_first import fill_file
-from homework.seminar_second import random_names
-from homework.seminar_third import read_from_files
-from homework.seminar_fourth import make_file
-from homework.seminar_fith import make_extensions_files
-from homework.seminar_sixth import make_files_in_directory
-from homework.seminar_seventh import sort_files_by_extensions
-from homework.home_task import mass_rename
+from homework import fill_file
+from homework import random_names
+from homework import read_from_files
+from homework import make_file
+from homework import make_extensions_files
+from homework import make_files_in_directory
+from homework import sort_files_by_extensions
+from homework import mass_rename
 
 # 1.1
 # - Напишите функцию, которая заполняет файл (добавляет в конец) случайными парами чисел. 
